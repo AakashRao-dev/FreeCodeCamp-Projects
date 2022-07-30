@@ -1,6 +1,6 @@
 # FreeCodeCamp Projects + Projects
 
-> All of the FreeCodeCamp projects are listed below.
+> All of the FreeCodeCamp projects + Certficates are listed below.
 
 **Created on: [30-07-2022]**
 
