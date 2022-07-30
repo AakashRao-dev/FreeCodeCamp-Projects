@@ -8,10 +8,10 @@
 - [Complete Joureny on a Website]()
 - [Blogs Link]()
 
-|  #  | Projects                            | Live Demo              |
-| :-: | ----------------------------------- | ---------------------- |
-| 01  | [01 Survey Form]()                  | [Repo]() [Live Demo]() |
-| 02  | [02 Tribute Page]()                 | [Repo]() [Live Demo]() |
-| 03  | [03 Technical Documentation Page]() | [Repo]() [Live Demo]() |
-| 04  | [04 Landing Page]()                 | [Repo]() [Live Demo]() |
-| 05  | [05 Portfolio Page]()               | [Repo]() [Live Demo]() |
+|  #  | Projects                            | Live Demo |
+| :-: | ----------------------------------- | --------- |
+| 01  | [01 Survey Form]()                  | [Link]()  |
+| 02  | [02 Tribute Page]()                 | [Link]()  |
+| 03  | [03 Technical Documentation Page]() | [Link]()  |
+| 04  | [04 Landing Page]()                 | [Link]()  |
+| 05  | [05 Portfolio Page]()               | [Link]()  |
