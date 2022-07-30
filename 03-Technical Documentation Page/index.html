@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <!--  HEADING   -->
+      <header>HTTP Documentation</header>
+      <!--  LINKS    -->
+      <ul>
+        <li>
+          <a href="#Introduction_to_HTTP" class="nav-link"
+            >Introduction to HTTP</a
+          >
+        </li>
+        <li>
+          <a href="#Overview_of_HTTP" class="nav-link">Overview of HTTP</a>
+        </li>
+        <li>
+          <a href="#Evolution_of_HTTP" class="nav-link">Evolution of HTTP</a>
+        </li>
+        <li>
+          <a href="#Invention_of_the_World_Wide_Web" class="nav-link"
+            >Invention of the World Wide Web</a
+          >
+        </li>
+        <li><a href="#HTTP_Cache" class="nav-link">HTTP Cache</a></li>
+        <li><a href="#HTTP_Cookies" class="nav-link">HTTP Cookies</a></li>
+        <li>
+          <a href="#Cross_Origin_Resource_Sharing" class="nav-link"
+            >Cross Origin Resource Sharing</a
+          >
+        </li>
+        <li>
+          <a href="#HTTP_Client_Hints" class="nav-link">HTTP Client Hints</a>
+        </li>
+        <li><a href="#HTTP_Messages" class="nav-link">HTTP Messages</a></li>
+        <li><a href="#HTTP_Headers" class="nav-link">HTTP Headers</a></li>
+        <li>
+          <a href="#HTTP_Request_Methods" class="nav-link"
+            >HTTP Request Methods</a
+          >
+        </li>
+        <li>
+          <a href="#HTTP_Status_Response_Codes" class="nav-link"
+            >HTTP Status Response Codes</a
+          >
+        </li>
+        <li>
+          <a href="#HTTP_CSP_Directives" class="nav-link"
+            >HTTP CSP Directives</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <!-- INTRODUCTION TO HTTP  -->
+      <section class="main-section" id="Introduction_to_HTTP">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          Introduction to HTTP
+        </header>
+        <p>
+          Hypertext Transfer Protocol (HTTP) is an application-layer protocol
+          for transmitting hypermedia documents, such as HTML. It was designed
+          for communication between web browsers and web servers, but it can
+          also be used for other purposes.
+        </p>
+        <p>
+          HTTP follows a classical client-server model, with a client opening a
+          connection to make a request, then waiting until it receives a
+          response. HTTP is a stateless protocol, meaning that the server does
+          not keep any data (state) between two requests.
+        </p>
+      </section>
+
+      <!-- AN OVERVIEW OF HTTP -->
+      <section class="main-section" id="Overview_of_HTTP">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          Overview of HTTP
+        </header>
+        <p>
+          HTTP is a protocol for fetching resources such as HTML documents. It
+          is the foundation of any data exchange on the Web and it is a
+          client-server protocol, which means requests are initiated by the
+          recipient, usually the Web browser. A complete document is
+          reconstructed from the different sub-documents fetched, for instance,
+          text, layout description, images, videos, scripts, and more.
+        </p>
+        <p>
+          Designed in the early 1990s, HTTP is an extensible protocol which has
+          evolved over time. It is an application layer protocol that is sent
+          over TCP, or over a TLS-encrypted TCP connection, though any reliable
+          transport protocol could theoretically be used. Due to its
+          extensibility, it is used to not only fetch hypertext documents, but
+          also images and videos or to post content to servers, like with HTML
+          form results. HTTP can also be used to fetch parts of documents to
+          update Web pages on demand.
+        </p>
+      </section>
+
+      <!-- EVOLUTION OF HTTP -->
+      <section class="main-section" id="Evolution_of_HTTP">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          Evolution of HTTP
+        </header>
+        <p>
+          HTTP (HyperText Transfer Protocol) is the underlying protocol of the
+          World Wide Web. Developed by Tim Berners-Lee and his team between
+          1989-1991, HTTP has gone through many changes that have helped
+          maintain its simplicity while shaping its flexibility. Keep reading to
+          learn how HTTP evolved from a protocol designed to exchange files in a
+          semitrusted laboratory environment into a modern internet maze that
+          carries images and videos in high resolution and 3D.
+        </p>
+      </section>
+
+      <section class="main-section" id="Invention_of_the_World_Wide_Web">
+        <header>Invention of the World Wide Web</header>
+        <p>
+          In 1989, while working at CERN, Tim Berners-Lee wrote a proposal to
+          build a hypertext system over the internet. Initially called the Mesh,
+          it was later renamed the World Wide Web during its implementation in
+          1990. Built over the existing TCP and IP protocols, it consisted of 4
+          building blocks:
+        </p>
+
+        <ul>
+          <li>
+            A textual format to represent hypertext documents, the HyperText
+            Markup Language (HTML).
+          </li>
+          <li>
+            A simple protocol to exchange these documents, the HyperText
+            Transfer Protocol (HTTP).
+          </li>
+          <li>
+            A client to display (and edit) these documents, the first web
+            browser called the WorldWideWeb.
+          </li>
+          <li>
+            A server to give access to the document, an early version of httpd.
+          </li>
+        </ul>
+      </section>
+
+      <!-- HTTP CACHE  -->
+      <section class="main-section" id="HTTP_Cache">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Cache
+        </header>
+        <p>
+          The HTTP cache stores a response associated with a request, and reuses
+          the stored response for subsequent requests.
+        </p>
+        <p>
+          There are several advantages to reusability. First, since there is no
+          need to deliver the request to the origin server, then the closer the
+          client and cache are, the faster the response will be. The
+          most-typical example is when the browser itself stores a cache for
+          browser requests.
+        </p>
+        <p>
+          Also, when a response is reusable, the origin server does not need to
+          process the request — so it does not need to parse and route the
+          request, restore the session based on the cookie, query the DB for
+          results, or render the template engine. That reduces the load on the
+          server. Proper operation of the cache is critical to the health of the
+          system.
+        </p>
+      </section>
+
+      <!-- HTTP COOKIES  -->
+      <section class="main-section" id="HTTP_Cookies">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Cookies
+        </header>
+        <p>
+          An HTTP cookie (web cookie, browser cookie) is a small piece of data
+          that a server sends to a user's web browser. The browser may store the
+          cookie and send it back to the same server with later requests.
+          Typically, an HTTP cookie is used to tell if two requests come from
+          the same browser—keeping a user logged in, for example. It remembers
+          stateful information for the stateless HTTP protocol.
+        </p>
+        <p>Cookies are mainly used for three purposes:</p>
+        <ul>
+          <li>
+            <strong>Management:</strong> Logins, shopping carts, game scores, or
+            anything else the server should remember
+          </li>
+          <li>
+            <strong>Personalization:</strong> User preferences, themes, and
+            other settings
+          </li>
+          <li>
+            <strong>Tracking:</strong> Recording and analyzing user behavior
+          </li>
+        </ul>
+      </section>
+
+      <!-- CROSS ORIGIN RESOURCE SHARING [CORS]  -->
+      <section class="main-section" id="Cross_Origin_Resource_Sharing">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          Cross Origin Resource Sharing
+        </header>
+        <p>
+          Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism
+          that allows a server to indicate any origins (domain, scheme, or port)
+          other than its own from which a browser should permit loading
+          resources. CORS also relies on a mechanism by which browsers make a
+          "preflight" request to the server hosting the cross-origin resource,
+          in order to check that the server will permit the actual request. In
+          that preflight, the browser sends headers that indicate the HTTP
+          method and headers that will be used in the actual request.
+        </p>
+        <img
+          src="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/cors_principle.png"
+          alt="Reference by MDN Web Docs"
+        />
+        <p>
+          For security reasons, browsers restrict cross-origin HTTP requests
+          initiated from scripts. For example, XMLHttpRequest and the Fetch API
+          follow the same-origin policy. This means that a web application using
+          those APIs can only request resources from the same origin the
+          application was loaded from unless the response from other origins
+          includes the right CORS headers.
+        </p>
+      </section>
+
+      <!-- HTTP CLIENT HINTS  -->
+      <section class="main-section" id="HTTP_Client_Hints">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Client Hints
+        </header>
+        <p>
+          Client Hints are a set of HTTP request header fields that a server can
+          proactively request from a client to get information about the device,
+          network, user, and user-agent-specific preferences. The server can
+          determine which resources to send, based on the information that the
+          client chooses to provide.
+        </p>
+        <p>
+          A server must announce that it supports client hints, using the
+          Accept-CH header to specify the hints that it is interested in
+          receiving. When a client that supports client hints receives the
+          Accept-CH header it can choose to append some or all of the listed
+          client hint headers in its subsequent requests. For example, following
+          Accept-CH in a response below, the client could append Width, Downlink
+          and Sec-CH-UA headers to all subsequent requests.
+        </p>
+        <p>
+          For example, following Accept-CH in a response below, the client could
+          append Width, Downlink and Sec-CH-UA headers to all subsequent
+          requests.
+        </p>
+        <code><span>Accept-CH:</span> Width, Downlink, Sec-CH-UA</code>
+      </section>
+
+      <!-- HTTP MESSAGES  -->
+      <section class="main-section" id="HTTP_Messages">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Messages
+        </header>
+        <p>
+          HTTP messages are composed of textual information encoded in ASCII,
+          and span over multiple lines. In HTTP/1.1, and earlier versions of the
+          protocol, these messages were openly sent across the connection. In
+          HTTP/2, the once human-readable message is now divided up into HTTP
+          frames, providing optimization and performance improvements.
+        </p>
+        <p>
+          Web developers, or webmasters, rarely craft these textual HTTP
+          messages themselves: software, a Web browser, proxy, or Web server,
+          perform this action. They provide HTTP messages through config files
+          (for proxies or servers), APIs (for browsers), or other interfaces.
+        </p>
+        <img
+          src="https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages/httpmsg2.png"
+          alt="Reference by MDN Web Docs"
+        />
+      </section>
+
+      <!-- HTTP HEADERS  -->
+      <section class="main-section" id="HTTP_Headers">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Headers
+        </header>
+        <p>
+          HTTP headers let the client and the server pass additional information
+          with an HTTP request or response. An HTTP header consists of its
+          case-insensitive name followed by a colon (:), then by its value.
+          Whitespace before the value is ignored.
+        </p>
+        <p>
+          Custom proprietary headers have historically been used with an X-
+          prefix, but this convention was deprecated in June 2012 because of the
+          inconveniences it caused when nonstandard fields became standard in
+          RFC 6648; others are listed in an IANA registry, whose original
+          content was defined in RFC 4229. IANA also maintains a registry of
+          proposed new HTTP headers.
+        </p>
+        <p>Headers can be grouped according to their contexts:</p>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Request_header"
+              >Request headers</a
+            >
+            contain more information about the resource to be fetched, or about
+            the client requesting the resource.
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Response_header"
+              >Response headers</a
+            >
+            hold additional information about the response, like its location or
+            about the server providing it.
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Payload_header"
+              >Representation headers</a
+            >
+            contain information about the body of the resource, like its MIME
+            type, or encoding/compression applied.
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Request_header"
+              >Payload headers</a
+            >contain representation-independent information about payload data,
+            including content length and the encoding used for transport.
+          </li>
+        </ul>
+      </section>
+
+      <!-- HTTP REQUEST METHODS  -->
+      <section class="main-section" id="HTTP_Request_Methods">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Request Methods
+        </header>
+        <p>
+          HTTP defines a set of request methods to indicate the desired action
+          to be performed for a given resource. Although they can also be nouns,
+          these request methods are sometimes referred to as HTTP verbs. Each of
+          them implements a different semantic, but some common features are
+          shared by a group of them: e.g. a request method can be safe,
+          idempotent, or cacheable.
+        </p>
+        <div class="methods">
+          <div class="method">
+            <h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET"
+                >GET</a
+              >
+            </h3>
+            <p>
+              The HTTP GET method requests a representation of the specified
+              resource. Requests using GET should only be used to request data
+              (they shouldn't include data).
+            </p>
+            <h3>Syntax</h3>
+            <code><span>GET</span> /index.html</code>
+          </div>
+
+          <div class="method">
+            <h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD"
+                >HEAD</a
+              >
+            </h3>
+            <p>
+              The HTTP HEAD method requests the headers that would be returned
+              if the HEAD request's URL was instead requested with the HTTP GET
+              method. For example, if a URL might produce a large download, a
+              HEAD request could read its Content-Length header to check the
+              filesize without actually downloading the file.
+            </p>
+            <h3>Syntax</h3>
+            <code><span>HEAD</span> /index.html</code>
+          </div>
+
+          <div class="method">
+            <h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST"
+                >POST</a
+              >
+            </h3>
+            <p>
+              The HTTP POST method sends data to the server. The type of the
+              body of the request is indicated by the Content-Type header.
+            </p>
+            <p>
+              The difference between PUT and POST is that PUT is idempotent:
+              calling it once or several times successively has the same effect
+              (that is no side effect), where successive identical POST may have
+              additional effects, like passing an order several times.
+            </p>
+            <h3>Syntax</h3>
+            <code>
+              <span>DELETE</span> /test HTTP/1.1 <br />
+              <span>Host:</span> foo.example <br />
+              <span>Content-Type:</span> application/x-www-form-urlencoded
+              <br />
+              <span>Content-Length:</span> 27 <br />
+              <br />
+
+              field1=value1&field2=value2
+            </code>
+          </div>
+
+          <div class="method">
+            <h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT"
+                >PUT</a
+              >
+            </h3>
+            <p>
+              The HTTP PUT request method creates a new resource or replaces a
+              representation of the target resource with the request payload.
+            </p>
+            <p>
+              The difference between PUT and POST is that PUT is idempotent:
+              calling it once or several times successively has the same effect
+              (that is no side effect), whereas successive identical POST
+              requests may have additional effects, akin to placing an order
+              several times.
+            </p>
+            <h3>Syntax</h3>
+            <code><span>PUT</span> /new.html HTTP/1.1</code>
+          </div>
+
+          <div class="method">
+            <h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT"
+                >DELETE</a
+              >
+            </h3>
+            <p>
+              The HTTP PUT request method creates a new resource or replaces a
+              representation of the target resource with the request payload.
+            </p>
+            <p>
+              The difference between PUT and POST is that PUT is idempotent:
+              calling it once or several times successively has the same effect
+              (that is no side effect), whereas successive identical POST
+              requests may have additional effects, akin to placing an order
+              several times.
+            </p>
+            <h3>Syntax</h3>
+            <code>
+              <span>DELETE</span> /file.html HTTP/1.1 <br />
+              <span>Host:</span> example.com <br />
+            </code>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTTP STATUS RESPONSE CODES -->
+      <section class="main-section" id="HTTP_Status_Response_Codes">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP Status Response Codes
+        </header>
+        <p>
+          HTTP response status codes indicate whether a specific HTTP request
+          has been successfully completed. Responses are grouped in five
+          classes:
+        </p>
+        <ol>
+          <li>
+            Informational responses
+            <span>( <strong>100</strong>-<strong>199</strong> )</span>
+          </li>
+          <li>
+            Successful responses
+            <span>( <strong>200</strong>-<strong>299</strong> )</span>
+          </li>
+          <li>
+            Redirection messages
+            <span>( <strong>300</strong>-<strong>399</strong> )</span>
+          </li>
+          <li>
+            Client error responses
+            <span>( <strong>400</strong>-<strong>499</strong> )</span>
+          </li>
+          <li>
+            Server error responses
+            <span>( <strong>500</strong>-<strong>599</strong> )</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- HTTP CSP DIRECTIVES -->
+      <section class="main-section" id="HTTP_CSP_Directives">
+        <header>
+          <!-- HEADING OF THE TOPIC -->
+          HTTP CSP Directives
+        </header>
+        <p>
+          The HTTP Content-Security-Policy response header allows web site
+          administrators to control resources the user agent is allowed to load
+          for a given page. With a few exceptions, policies mostly involve
+          specifying server origins and script endpoints. This helps guard
+          against cross-site scripting attacks (Cross-site_scripting).
+        </p>
+        <h3>Syntax</h3>
+        <code class="notranslate">
+          <span>Content-Security-Policy:</span> &lt;policy-directive&gt;;
+          &lt;policy-directive&gt;
+        </code>
+      </section>
+    </main>
+  </body>
+</html>
