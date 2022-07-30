@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rental Car Survey Form</title>
+    <link rel="stylesheet" href="./style.css"></link>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="title">Rental Car Survey Form</h1>
+      <p id="description">A visual form which has to be done to take a quick customer review for our services & improvements for it.</p>
+    </header>
+
+    <!-- FORM -->
+    <form id="survey-form">
+      <!-- NAME INPUT -->
+      <label id="name-label">
+        Full Name
+        <input type="text" id="name" required placeholder="Enter your full name">
+      </label>
+      <!-- EMAIL INPUT -->
+      <label id="email-label">
+        Email
+        <input type="email" id="email" required placeholder="Enter your email address">
+      </label>
+      <!-- NUMBER INPUT -->
+      <label id="number-label">
+        Phone Number
+        <input type="number" min="10" max="12" id="number" placeholder="Enter your phone no">
+      </label>
+
+      <!-- SELECT OR DROPDOWN -->
+      <label>How do you got to know about us?</label>
+      <select id="dropdown">
+        <option>Choose one option</option>
+        <option>Instagram</option>
+        <option>Facebook</option>
+        <option>LinkedIn</option>
+        <option>Youtube</option>
+      </select>
+
+      <!-- THREE RADIO BUTTONS -->
+      <fieldset>
+        <legend>Which Car category do you like the most?</legend>
+        <label>
+          <input type="radio" name="cars" value="suv">
+          Suv
+        </label>
+        <label>
+          <input type="radio" name="cars" value="sedan">
+          Sedan
+        </label>
+        <label>
+          <input type="radio" name="cars" value="small-cars">
+          Small Cars
+        </label>
+      </fieldset>
+
+      <!-- ONE CHECKBOX -->
+      <label class="checkbox">
+        <input type="checkbox" value="agree">
+        By checking you agree with our Terms & conditions.
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="agree">
+        By checking you agree with Privacy policy.
+      </label>
+
+      <!-- TEXTAREA FOR MESSAGE -->
+      <textarea rows="5" cols="23" placeholder="Please enter your message"></textarea>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>

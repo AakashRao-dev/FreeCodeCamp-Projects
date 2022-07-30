@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Padauk', sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1473081556163-2a17de81fc97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx);
+  background-size: cover;
+  background-position: center top;
+  color: #ddd;
+  position: relative;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+form {
+  background: #011627aa;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* INPUT */
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  min-height: 2.4em;
+  margin-bottom: 15px;
+  background: #dad7cd;
+  border: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+fieldset label {
+  display: inline-block;
+  margin: 20px;
+}
+
+fieldset legend {
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 40px;
+}
+
+fieldset input,
+input[type='checkbox'] {
+  width: unset;
+  min-height: unset;
+  transform: scale(1.1);
+  display: inline-block;
+  accent-color: #fb5607;
+}
+
+input[type='checkbox'] {
+  margin: 2em 0.4em 0 0;
+}
+
+textarea {
+  font-family: inherit;
+  padding: 3px 0 0 3px;
+  margin: 20px 0;
+  resize: none;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #3bb78f;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 23px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+button:active {
+  transform: translate(0, 13px);
+}
