@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD - Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 id="title">🍕 Pizza Lovers' Feedback</h1>
+    <p id="description">Help us make your pizza experience even better!</p>
+
+    <div class="container">
+      <form id="survey-form">
+        <label for="name" id="name-label"
+          >Name
+          <input id="name" type="text" placeholder="Enter your Name" required
+        /></label>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label for="number" id="number-label"
+          >Age
+          <input id="number" min="12" max="120" type="number" placeholder="age"
+        /></label>
+        <label for="dropdown"
+          >Your preferred Pizza Type:
+          <select name="pizza-type" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="">Chicago Style</option>
+            <option value="">Brick Oven</option>
+            <option value="">Italian</option>
+            <option value="">Neapolitan</option>
+            <option value="">California</option>
+            <option value="">New York Style</option>
+            <option value="">Sicilian</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Would you recommend In-Laws Pizza to a friend?</legend>
+          <div>
+            <label for="definitely"
+              ><input
+                type="radio"
+                name="recommendation"
+                id="definitely"
+                value="definitely"
+              />Definitely</label
+            >
+          </div>
+          <div>
+            <label for="maybe"
+              ><input
+                type="radio"
+                name="recommendation"
+                id="maybe"
+                value="maybe"
+              />Maybe</label
+            >
+          </div>
+          <div>
+            <label for="not-sure"
+              ><input
+                type="radio"
+                name="recommendation"
+                id="not-sure"
+                value="not-sure"
+              />Not Sure</label
+            >
+          </div>
+        </fieldset>
+        <label for="questionnaire"
+          >Would do you like the most about In-Laws Pizza?
+          <select name="questionnaire" id="questionnaire">
+            <option value="">(select one)</option>
+            <option value="staff">Friendly Staff</option>
+            <option value="decor">Aesthetic Decor</option>
+            <option value="taste">Pizza taste was amazing</option>
+            <option value="overall">Overall Service</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>
+            Would you like to recommend any improvements for our service?
+            <span>(Check all that apply)</span>
+          </legend>
+
+          <label>
+            <input type="checkbox" name="improvements" value="faster_service" />
+            Faster service </label
+          ><br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="improvements"
+              value="more_vegan_options"
+            />
+            More vegan options </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="improvements" value="cleanliness" />
+            Better cleanliness </label
+          ><br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="improvements"
+              value="friendlier_staff"
+            />
+            Friendlier staff </label
+          ><br />
+
+          <label>
+            <input type="checkbox" name="improvements" value="menu_variety" />
+            More variety in the menu </label
+          ><br />
+
+          <label>
+            <input
+              type="checkbox"
+              name="improvements"
+              value="online_ordering"
+            />
+            Better online ordering experience
+          </label>
+        </fieldset>
+        <label for="comments-suggestions">
+          Any comments or suggestions?
+          <textarea
+            name="comments-suggestions"
+            id="comments-suggestions"
+            placeholder="Enter your comment here..."
+            cols="30"
+            rows="6"
+          ></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
