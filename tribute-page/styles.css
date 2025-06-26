@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Header & Hero */
+.header {
+  background-color: #e6e6e6;
+  padding: 50px 20px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.header > h1 {
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  color: #3b3b3b;
+  margin-bottom: 1rem;
+}
+
+.header > p {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.img-div {
+  max-width: 900px;
+  width: 80%;
+  margin: auto;
+}
+
+.img-caption {
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+  margin: 16px auto 0;
+  font-size: 1.6rem;
+}
+
+/* Timeline Section */
+.tribute-info {
+  background-color: #e6e6e6;
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+}
+
+.tribute-info > h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #3b3b3b;
+  text-align: center;
+}
+
+.tribute-info > ul {
+  width: 80%;
+  max-width: 550px;
+  margin: 4rem auto 0;
+}
+
+.tribute-info > ul > li {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Quote */
+.quote {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 700px;
+  padding: 1rem;
+  position: relative;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 3rem;
+  color: #ccc;
+  pointer-events: none;
+}
+
+.quote-text {
+  font-size: 3rem;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.quote-cite {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+h3 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e6e6e6;
+  color: #3b3b3b;
+}
+
+h3 > a {
+  color: cornflowerblue;
+}
